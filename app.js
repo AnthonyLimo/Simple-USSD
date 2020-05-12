@@ -63,10 +63,10 @@ app.post('/ussd', (req, res) => {
         sessionId: req.body.sessionId,
         serviceCode: req.body.serviceCode,
         text: req.body.text
-    };
-    menu.run(args, resMsg => {
-        res.send(resMsg);
-    });
+  };
+  menu.run(args, resMsg => {
+    res.send(resMsg);
+  });
 });
 
 app.listen(port, () => {
